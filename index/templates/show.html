@@ -1,0 +1,252 @@
+{% extends "title_base.html"  %}
+{% load static %}
+
+{% block header_extends %}
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/vendor.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+
+    <script src="{% static 'js/modernizr.js' %}"></script>
+    
+{% endblock %}
+
+{% block content  %}
+<body>   
+<!-- <div class="adcenter"><script src="http://www.cssmoban.com/include/new/ggad2_728x90.js"></script></div> -->
+
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <div id="top" class="s-wrap site-wrapper">
+
+        <!-- site header
+        ================================================== -->
+        <header class="s-header">
+
+            <div class="header__top">
+                <div class="header__logo">
+                    <a class="site-logo" href="../../">
+                        <img src="{% static 'images/logo.png'%}" alt="Homepage">
+                    </a>
+                </div>
+
+                <!-- <div class="header__search">
+    
+                    <form role="search" method="get" class="header__search-form" action="#">
+                        <label>
+                            <span class="hide-content">Search for:</span>
+                            <input type="search" class="header__search-field" placeholder="Type Keywords" value="" name="s" title="Search for:" autocomplete="off">
+                        </label>
+                        <input type="submit" class="header__search-submit" value="Search">
+                    </form>
+        
+                    <a href="#0" title="Close Search" class="header__search-close">Close</a>
+        
+                </div>   -->
+                <!-- end header__search -->
+
+                <!-- toggles -->
+                <!-- <a href="#0" class="header__search-trigger"></a> -->
+                <a href="#0" class="header__menu-toggle"><span>Menu</span></a>
+
+            </div> <!-- end header__top -->
+
+            <nav class="header__nav-wrap">
+
+                <ul class="header__nav">
+                    <li class="has-children">
+                        <a href="index.html" title="">类别</a>
+                        <ul class="sub-menu">
+                            <li><a href="../../">全部</a></li>
+                            <li><a href="../show/?name=dramaType&key=电影">电影</a></li>
+                            <li><a href="../show/?name=dramaType&key=电视剧">电视剧</a></li>
+                            <li><a href="../show/?name=dramaType&key=纪录片">纪录片</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-children">
+                        <a href="#0" title="">等级</a>
+                        <ul class="sub-menu">
+                        <li><a href="../show/?name=level&key=A">A</a></li>
+                        <li><a href="../show/?name=level&key=B">B</a></li>
+                        <li><a href="../show/?name=level&key=C">C</a></li>
+                        <li><a href="../show/?name=level&key=D">D</a></li>
+                        <li><a href="../show/?name=level&key=E">E</a></li>
+                        
+                        </ul>
+                    </li>
+                    <li class="has-children">
+                        <a href="#0" title="">地区</a>
+                        <ul class="sub-menu">
+                            <li><a href="../../">全部</a></li>
+                            <li><a href="../show/?name=region&key=美国">美国</a></li>
+                            <li><a href="../show/?name=region&key=大陆">大陆</a></li>
+                            <li><a href="../show/?name=region&key=日本">日本</a></li>
+                            <li><a href="../show/?name=region&key=韩国">韩国</a></li>
+                            <li><a href="../show/?name=region&key=英国">英国</a></li>
+                            <li><a href="../show/?name=region&key=香港">香港</a></li>
+                            <li><a href="../show/?name=region&key=台湾">台湾</a></li>
+                            <li><a href="../show/?name=region&key=印度">印度</a></li>
+                            <li><a href="../show/?name=region&key=法国">法国</a></li>
+                            <li><a href="../show/?name=region&key=西班牙">西班牙</a></li>
+                            <li><a href="../show/?name=region&key=意大利">意大利</a></li>
+                            <li><a href="../show/?name=region&key=其他">其他</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-children">
+                    <a href="styles.html" title="">类型</a>
+                        <ul class="sub-menu">
+                            <li><a href="../../">全部</a></li>
+                            <li><a href="../show/?name=Type&key=动作">动作</a></li>
+                            <li><a href="../show/?name=Type&key=战争">战争</a></li>
+                            <li><a href="../show/?name=Type&key=剧情">剧情</a></li>
+                            <li><a href="../show/?name=Type&key=喜剧">喜剧</a></li>
+                            <li><a href="../show/?name=Type&key=生活">生活</a></li>
+                            <li><a href="../show/?name=Type&key=青春">青春</a></li>
+                            <li><a href="../show/?name=Type&key=科幻">科幻</a></li>
+                            <li><a href="../show/?name=Type&key=历史">历史</a></li>
+                            <li><a href="../show/?name=Type&key=悬疑">悬疑</a></li>
+                            <li><a href="../show/?name=Type&key=体育">体育</a></li>
+                            <li><a href="../show/?name=Type&key=冒险">冒险</a></li>
+                            <li><a href="../show/?name=Type&key=动画">动画</a></li>
+                            <li><a href="../show/?name=Type&key=爱情">爱情</a></li>
+                            <li><a href="../show/?name=Type&key=幽默">幽默</a></li>
+                            <li><a href="../show/?name=Type&key=传记">传记</a></li>
+                            <li><a href="../show/?name=Type&key=古装">古装</a></li>
+                        </ul>
+                    </li>
+                    
+                </ul> <!-- end header__nav -->
+
+                <ul class="header__social">
+                    <li class="ss-facebook">
+                        <a href="https://www.baidu.com/s?wd=facebook&rsv_spt=1&rsv_iqid=0x9eb46e1f00013ac1&issp=1&f=8&rsv_bp=1&rsv_idx=2&ie=utf-8&tn=baiduhome_pg&rsv_enter=1&rsv_dl=tb&rsv_sug3=8&rsv_sug1=8&rsv_sug7=100&rsv_sug2=0&rsv_btype=i&inputT=2046&rsv_sug4=2046">
+                            <span class="screen-reader-text">Facebook</span>
+                        </a>
+                    </li>
+                    <li class="ss-twitter">
+                        <a href="https://www.baidu.com/s?wd=twitter&rsv_spt=1&rsv_iqid=0x9eb46e1f00013ac1&issp=1&f=8&rsv_bp=1&rsv_idx=2&ie=utf-8&rqlang=cn&tn=baiduhome_pg&rsv_enter=1&rsv_dl=tb&oq=facebook&rsv_btype=t&inputT=3058&rsv_t=0a27V4lzTd6aweFGrbYV7%2FukoCqSLIsu1reVWuaY2FMWaOIblKU1fQ5qrorc2OjskyWC&rsv_pq=9a3d4c8600015af6&rsv_sug3=15&rsv_sug1=15&rsv_sug7=100&rsv_sug2=0&rsv_sug4=3058">
+                            <span class="screen-reader-text">Twitter</span>
+                        </a>
+                    </li>
+                    <li class="ss-dribbble">
+                        <a href="https://www.baidu.com/s?wd=dribbble&rsv_spt=1&rsv_iqid=0x9eb46e1f00013ac1&issp=1&f=8&rsv_bp=1&rsv_idx=2&ie=utf-8&rqlang=cn&tn=baiduhome_pg&rsv_enter=1&rsv_dl=tb&oq=twitter&rsv_btype=t&inputT=1859&rsv_t=84333jj1zoxA9ZYCb7G8wx%2B7k7xh1pWU1WrNVhFNf9b0Ol6qdBmtstd6lDUeLEunxfs%2B&rsv_pq=a5d3c75700065e00&rsv_sug3=23&rsv_sug1=23&rsv_sug7=100&rsv_sug2=0&rsv_sug4=1859">
+                            <span class="screen-reader-text">Dribbble</span>
+                        </a>
+                    </li>
+                    <li class="ss-pinterest">
+                        <a href="https://www.baidu.com/s?wd=pinterest&rsv_spt=1&rsv_iqid=0x9eb46e1f00013ac1&issp=1&f=8&rsv_bp=1&rsv_idx=2&ie=utf-8&rqlang=cn&tn=baiduhome_pg&rsv_enter=1&rsv_dl=tb&oq=dribbble&rsv_btype=t&inputT=2387&rsv_t=f997iZz41nZT0SYBwonT0gg8kA8jK00pq79quQaMCvrABsqrTKNmit8MEzKMjjwIFkWM&rsv_pq=a3026c7e00063ea6&rsv_sug3=32&rsv_sug1=32&rsv_sug7=100&rsv_sug2=0&rsv_sug4=2387">
+                            <span class="screen-reader-text">Behance</span>
+                        </a>
+                    </li>
+                </ul>
+
+            </nav> <!-- end header__nav-wrap -->
+
+            
+
+        </header> <!-- end s-header -->
+
+        <div class="s-content">
+            
+            <div class="masonry-wrap">
+
+                <div class="masonry">
+    
+                    <div class="grid-sizer"></div>
+                    
+                    {% for i in alldata %}
+                        {% if i.14 != NULL %}
+                            <article class="masonry__brick entry format-standard animate-this">
+                                
+                                <div class="entry__thumb">
+                                    <a href="{{i.2}}" class="entry__thumb-link">
+                                        <img src="{{i.14}}"alt="">
+                                                <!-- srcset="images/thumbs/masonry/woodcraft-600.jpg 1x, images/thumbs/masonry/woodcraft-1200.jpg 2x"  -->
+                                    </a>
+                                </div>
+                
+                                <div class="entry__text">
+                                    <div class="entry__header">
+                                        <h2 class="entry__title"><a href="single-standard.html">{{i.0}}</a></h2>
+                                        <div class="entry__meta">
+                                            <span class="entry__meta-cat">
+                                                <a href="category.html">原名：{{i.5}}</a> 
+                                            </span><br>
+                                            <span class="entry__meta-cat">
+                                                <a href="category.html">类别：{{i.3}}</a> 
+                                            </span><br>
+                                            <span class="entry__meta-date">
+                                                <a href="single-standard.html">影视分级：{{i.1}}</a>
+                                            </span><br>
+                                            <span class="entry__meta-date">
+                                                <a href="single-standard.html">地区：{{i.6}}</a>
+                                            </span>
+                                            <span class="entry__meta-date">
+                                                <a href="single-standard.html">语言：{{i.7}}</a>
+                                            </span><br>
+                                            <span class="entry__meta-date">
+                                                <a href="single-standard.html">类型：{{i.10}}</a>
+                                            </span>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="entry__excerpt">
+                                        <p>
+                                        制作公司：{{i.9}}
+                                        </p>
+                                        <p>
+                                        编剧：{{i.11}}
+                                        </p>
+                                        <p>
+                                        导演：{{i.12}}
+                                        </p>
+                                        <p>
+                                        演员：{{i.13}}
+                                        </p>
+                                    </div>
+                                </div>
+                
+                            </article> <!-- end article -->
+                        {% endif %}
+                    {% endfor %}
+    
+                </div> <!-- end masonry -->
+
+            </div> <!-- end masonry-wrap -->
+
+            <!-- <div class="row">
+                <div class="column large-full">
+                    <nav class="pgn">
+                        <ul>
+                            <li><a class="pgn__prev" href="#0" id="jian">Prev</a></li>
+                            <li><a class="pgn__num current" href="#0">1</a></li>
+                            <li><a class="pgn__num" href="#0">2</a></li>
+                            <li><a class="pgn__num" href="#0">3</a></li>
+                            <li><a class="pgn__num" href="#0">4</a></li>
+                            <li><a class="pgn__num" href="#0">5</a></li>
+                            <li><span class="pgn__num dots">…</span></li>
+                            <li><a class="pgn__num" href="#0">8</a></li>
+                            <li><a class="pgn__next" href="#0" id="jia">Next</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div> -->
+
+        </div> <!-- end s-content -->
+{% endblock %}
+
+
+{% block JavaScript %}
+<!-- Java Script
+    ================================================== -->
+    <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'js/plugins.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+{% endblock %}
